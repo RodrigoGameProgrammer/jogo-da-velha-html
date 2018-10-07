@@ -1,0 +1,93 @@
+
+#tabuleiro{
+	width:400px;
+	height:400px; 
+	display:flex; /*Arrumando o tabuleiro dentro da div*/
+	flex-wrap: wrap; /*Quando chegar no limite dos pixels, as oura divs vão descer*/
+	align-content:flex-start;
+	margin-top: 15%;
+	margin-left: 40%;
+}
+
+.posJogador{
+	width:100px;
+	height:100px; 
+	margin:0px;
+	padding:0px; 
+	display:flex; /*Arrumar as imagens dentro da div*/
+	cursor: pointer;
+}
+
+/*Editando o tabuleiro para colocar as bordas*/
+#a1{
+	border-right:1px solid #000;
+	border-bottom:1px solid #000;
+}
+
+#a2{
+	border-left:1px solid #000;
+	border-right:1px solid #000;
+	border-bottom:1px solid #000;
+}
+
+#a3{
+	border-left:1px solid #000;
+	border-bottom:1px solid #000;
+}
+
+#b1{
+	border-top:1px solid #000;
+	border-right:1px solid #000;
+	border-bottom:1px solid #000;
+}
+
+#b2{
+	border:1px solid #000;
+}
+
+#b3{
+	border-left:1px solid #000;
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+}
+
+#c1{
+	border-right:1px solid #000;
+	border-top:1px solid #000;
+}
+
+#c2{
+	border-left:1px solid #000;
+	border-right:1px solid #000;
+	border-top:1px solid #000;
+}
+
+#c3{
+	border-left:1px solid #000;
+	border-top:1px solid #000;
+}
+
+/*Parte do Menu*/
+#menu{
+	display: flex; /*para centralizar as coisas dentro dessa div*/
+	flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#botao_pvp{
+	height: 300px;
+	width: 300px;
+	background-image: url('../img/vs.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+
+#botao_pc{
+	height: 300px;
+	width: 300px;
+	background-image: url('../img/pc.png');
+	background-repeat: no-repeat;
+	background-position: center;
+}
