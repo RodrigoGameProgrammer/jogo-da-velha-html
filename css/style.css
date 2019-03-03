@@ -1,15 +1,30 @@
 
+html{
+	background-image: url(../img/bg.jpg); 
+	background-repeat: no-repeat;
+}
+
 #tabuleiro{
 	width:400px;
 	height:400px; 
 	display:flex; /*Arrumando o tabuleiro dentro da div*/
-	flex-wrap: wrap; /*Quando chegar no limite dos pixels, as oura divs vão descer*/
+	flex-wrap: wrap; /*Quando chegar no limite dos pixels, as outras divs vão descer*/
 	align-content:flex-start;
 	margin-top: 15%;
 	margin-left: 40%;
 }
 
-.posJogador{
+#tabuleiro2{
+	width:400px;
+	height:400px; 
+	display:flex; /*Arrumando o tabuleiro dentro da div*/
+	flex-wrap: wrap; /*Quando chegar no limite dos pixels, as outras divs vão descer*/
+	align-content:flex-start;
+	margin-top: 15%;
+	margin-left: 40%;
+}
+
+.posJogador{ /*Edita posição das imagens dentro do tabuleiro*/
 	width:100px;
 	height:100px; 
 	margin:0px;
@@ -18,7 +33,19 @@
 	cursor: pointer;
 }
 
+.pontuacao{ /*Edita o texto de pontuação*/
+	margin-left: 40%;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	background-color: black;
+	width: 22%;
+
+		
+}
+
 /*Editando o tabuleiro para colocar as bordas*/
+/*Tabuleiro 1 PVP*/
 #a1{
 	border-right:1px solid #000;
 	border-bottom:1px solid #000;
@@ -67,8 +94,59 @@
 	border-top:1px solid #000;
 }
 
+/*Tabuleiro 2 PVE*/
+#q1{
+	border-right:1px solid #000;
+	border-bottom:1px solid #000;
+}
+
+#q2{
+	border-left:1px solid #000;
+	border-right:1px solid #000;
+	border-bottom:1px solid #000;
+}
+
+#q3{
+	border-left:1px solid #000;
+	border-bottom:1px solid #000;
+}
+
+#w1{
+	border-top:1px solid #000;
+	border-right:1px solid #000;
+	border-bottom:1px solid #000;
+}
+
+#w2{
+	border:1px solid #000;
+}
+
+#w3{
+	border-left:1px solid #000;
+	border-top:1px solid #000;
+	border-bottom:1px solid #000;
+}
+
+#e1{
+	border-right:1px solid #000;
+	border-top:1px solid #000;
+}
+
+#e2{
+	border-left:1px solid #000;
+	border-right:1px solid #000;
+	border-top:1px solid #000;
+}
+
+#e3{
+	border-left:1px solid #000;
+	border-top:1px solid #000;
+}
+
+
 /*Parte do Menu*/
 #menu{
+	margin-top: 15%;
 	display: flex; /*para centralizar as coisas dentro dessa div*/
 	flex-direction: row;
     justify-content: center;
@@ -91,3 +169,4 @@
 	background-repeat: no-repeat;
 	background-position: center;
 }
+

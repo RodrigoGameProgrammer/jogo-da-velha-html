@@ -2,14 +2,22 @@
 <html>
 	<head>
 		<meta charset="UTF=8">
+		<!--Icone da barra-->
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<title>Jogo da Velha</title>
 	</head>
 	<body>
+
+		<!--Botoes do Menu-->
 		<div id="menu">
+			<button id="resetar" onclick="resetaPontuacao()">Resetar Pontos</button>
 			<button id="botao_pvp" onclick="pvp()"></button>
-			<button id="botao_pc" onclick=""></button>
+			<button id="botao_pc" onclick="pve()"></button>
 		</div>
+
+		<!--Tabuleiro Jogador vs Jogador-->
 		<div id="tabuleiro">
 			<div id="a1" class="posJogador" onclick="jogarPVP(1)"></div>
 			<div id="a2" class="posJogador" onclick="jogarPVP(2)"></div>
@@ -23,6 +31,32 @@
 			<div id="c2" class="posJogador" onclick="jogarPVP(8)"></div>
 			<div id="c3" class="posJogador" onclick="jogarPVP(9)"></div>
 		</div>
+
+		<!--Tabuleiro Jogador vs CPU-->
+		<div id="tabuleiro2">
+			<div id="q1" class="posJogador" onclick="jogarPVE(1)"></div>
+			<div id="q2" class="posJogador" onclick="jogarPVE(2)"></div>
+			<div id="q3" class="posJogador" onclick="jogarPVE(3)"></div>
+			
+			<div id="w1" class="posJogador" onclick="jogarPVE(4)"></div>
+			<div id="w2" class="posJogador" onclick="jogarPVE(5)"></div>
+			<div id="w3" class="posJogador" onclick="jogarPVE(6)"></div>
+			
+			<div id="e1" class="posJogador" onclick="jogarPVE(7)"></div>
+			<div id="e2" class="posJogador" onclick="jogarPVE(8)"></div>
+			<div id="e3" class="posJogador" onclick="jogarPVE(9)"></div>
+		</div>
+
+		<!--TEXTO DE PONTUAÇÃO-->	
+
+		<!--Jogador vs Jogador-->	
+		<div id="pontosJogador1" class="pontuacao"></div>
+		<div id="pontosJogador2" class="pontuacao"></div>
+		
+		<!--Jogador vs CPU-->	
+		<div id="pontosJogador" class="pontuacao"></div>
+		<div id="pontosCPU" class="pontuacao"></div>
+
 	</body>
 	<script src = "js/controle.js"></script>
 </html>
